@@ -45,7 +45,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4p-cp-Ilg">
                                 <rect key="frame" x="100" y="488" width="175" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="再生/停止"/>
+                                <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="slideShowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pwE-ub-v5J"/>
                                 </connections>
@@ -98,12 +98,12 @@
                                     <constraint firstAttribute="height" constant="250" id="HVP-Td-IDy"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2F0-0K-CVo">
-                                <rect key="frame" x="110" y="370" width="155" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2F0-0K-CVo">
+                                <rect key="frame" x="110" y="373" width="155" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <action selector="tap2:" destination="qNu-xM-6u1" eventType="touchUpInside" id="Dg2-tU-Y5V"/>
+                                    <segue destination="e91-o8-GIN" kind="unwind" unwindAction="unwind:" id="hh4-rP-6ns"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -124,6 +124,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlh-Q0-vFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="e91-o8-GIN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="797.60000000000002" y="71.674876847290648"/>
         </scene>

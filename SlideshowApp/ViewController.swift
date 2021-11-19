@@ -135,6 +135,8 @@ class ViewController: UIViewController {
         
         resultViewController.image = imageView.image
     }
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+}
 }
 
         

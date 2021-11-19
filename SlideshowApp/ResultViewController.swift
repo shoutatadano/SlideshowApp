@@ -19,18 +19,19 @@ class ResultViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    @IBAction func tap2(_ sender: Any) {
+}
+   /// @IBAction func tap2(_ sender: Any) {
 
                // ①storyboardのインスタンス取得
-               let storyboard: UIStoryboard = self.storyboard!
+             ///  let storyboard: UIStoryboard = self.storyboard!
         
                // ②遷移先ViewControllerのインスタンス取得
-               let nextView = storyboard.instantiateViewController(withIdentifier: "farst") as!
-                ViewController
+            ///   let nextView = storyboard.instantiateViewController(withIdentifier: "farst") as!
+             ///   ViewController
                // ③画面遷移
-               self.present(nextView, animated: true, completion: nil)
+            ///   self.present(nextView, animated: true, completion: nil)
            
-    }
+    
     
 
     /*
@@ -43,4 +44,4 @@ class ResultViewController: UIViewController {
     }
     */
 
-}
+
