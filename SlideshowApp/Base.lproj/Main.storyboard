@@ -92,8 +92,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4oX-6W-ndU">
-                                <rect key="frame" x="0.0" y="90" width="375" height="250"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4oX-6W-ndU">
+                                <rect key="frame" x="0.0" y="94" width="375" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="HVP-Td-IDy"/>
                                 </constraints>

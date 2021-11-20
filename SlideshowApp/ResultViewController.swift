@@ -16,7 +16,9 @@ class ResultViewController: UIViewController {
        override func viewDidLoad() {
            super.viewDidLoad()
           image1.image = image
+       
         
+       
         // Do any additional setup after loading the view.
     }
 }
