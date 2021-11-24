@@ -13,9 +13,11 @@ class ResultViewController: UIViewController {
     
     var image: UIImage!
 
+    
        override func viewDidLoad() {
            super.viewDidLoad()
           image1.image = image
+       
        
         
        

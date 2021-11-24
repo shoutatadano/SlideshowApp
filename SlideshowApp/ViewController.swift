@@ -133,18 +133,26 @@ class ViewController: UIViewController {
                imageView.image = imageArray[nowIndex]
         
                 }
+   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
+       
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
-        
         resultViewController.image = imageView.image
-        timer.invalidate()
+       
+        
+        if(timer==nil){
+           
+            startstopButton.setTitle("停止", for: .normal)
+        }
+        else{
+            timer.invalidate()
+            timer=nil
+            startstopButton.setTitle("停止", for: .normal)
+        }
+       
     }
-    
-    
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-        timer=Timer.scheduledTimer(timeInterval: 2,target:self,selector: #selector(changeImage),userInfo: nil,repeats: true)
+       
        
 }
 }
