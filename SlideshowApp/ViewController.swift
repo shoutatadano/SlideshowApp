@@ -142,14 +142,17 @@ class ViewController: UIViewController {
         
         if(timer==nil){
            
-            startstopButton.setTitle("停止", for: .normal)
+            startstopButton.setTitle("再生", for: .normal)
+           
         }
         else{
+            
             timer.invalidate()
             timer=nil
-            startstopButton.setTitle("停止", for: .normal)
+            startstopButton.setTitle("再生",for: .normal)
+            moveon.isEnabled = true
+            return1.isEnabled = true
         }
-       
     }
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
        
